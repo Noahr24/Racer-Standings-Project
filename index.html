@@ -13,12 +13,11 @@
         <title>F1 Racer Standings</title>
     </head>
     <body>
-        <!--HTML elements-->
         <header>
             <div class="col-12 d-flex justify-content-center"><h1>F1 Racer Standings</h1></div>
         </header>
         <!-- Creating Form to Input the Season and Round -->
-        <form name="infoData" id="infoDataForm">
+        <form>
             <div class="row d-flex justify-content-center">
                 <div class="col-2">
                     <input class="form-control" type="text" name="season" id="season" placeholder="Season" aria-label="default input example" required>
@@ -27,14 +26,16 @@
                     <input class="form-control" type="text" name="round" id="round" placeholder="Round" aria-label="default input example" required>
                 </div>
             </div>
+            <!-- Creating the buttons, and adding the on-click to them.  -->
             <div class="container d-flex justify-content-center mt-4">
                 <button type="submit" class="btn btn-success px-5 me-5" onclick="getData()">Get Data</button>
                 <button type="button" class="btn btn-secondary px-5" onclick="clearData()">Clear</button>
             </div>
         </form>
+        <!-- Creating the Table -->
         <div class="container mt-5">
             <div class="col-8 offset-2 d-flex justify-content-center">
-                <table class="table">
+                <table class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">Position</th>
